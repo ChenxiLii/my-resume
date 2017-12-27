@@ -572,10 +572,9 @@
 
 <script src="js/jquery.min.js"></script>
 <script>
-    fn()
-    function fn() {
-        var time = setInterval(function () {
-            if ($('.swiper-wrapper').offset().top == -window.innerHeight) {
+    
+	setInterval(function () {
+		if ($('.swiper-wrapper').offset().top == -window.innerHeight) {
                 setTimeout(function () {
                     $('.sk_an1').show();
                 },1100)
@@ -594,8 +593,7 @@
             }else{
                 $('.sk_an1,.sk_an2,.sk_an3,.sk_an4,.sk_an5').hide()
             }
-        },1)
-    }
+	},500)
 
     var browser = {
         versions: function () {
